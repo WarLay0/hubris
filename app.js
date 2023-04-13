@@ -18,6 +18,9 @@ $(document).ready(function(){
         $('.narcisseImage').css('left', '100vw');
         $('.narcisseImage').css('opacity', '0');
 
+        $('.narcisseTitle').css('top', '105vh');
+
+
         $('#bgNarcisse').css('opacity', '0');
 
         setTimeout(()=>{
@@ -31,6 +34,9 @@ $(document).ready(function(){
         $('#bgNarcisse').css('background-color', 'transparent');
 
         $('.narcisseImage').css('left', '100vw');
+
+        $('.narcisseTitle').css('top', '111vh');
+
 
         setTimeout(()=>{
             $('.narcisseImage').css('left', '75vw');

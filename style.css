@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'TrajanPro', serif;
+    src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Bodoni';
+    src: url('fonts/BodoniModa-VariableFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -123,7 +139,10 @@ article{
 
 #narcisse{
     cursor: url('img/ico/hearth.svg'), pointer;
+    background-image: url(img/Narcisse/1.png);
+    background-size: cover;
 }
+
 #bgNarcisse img{
     transition: all 0.8s;
     position: absolute;
@@ -152,6 +171,8 @@ article{
     position: absolute;
     left: 76vw;
     top: 111vh;
+
+    transition: all 0.8s;
 }
 #midas{
     cursor: url('img/ico/money.svg'), pointer;
@@ -202,14 +223,14 @@ article{
     height: 100vh;
     overflow-x: hidden;
 
-    opacity: 1;
-    transition: all 0.2s;
+    opacity: 0;
+    transition: all 0.5s;
 }
 .content::-webkit-scrollbar{
     /* A faire */
 }
 
-.textCutIcare, .textCutNarcisse, .textCutMidas{
+.textCutIcare, .textCutMidas{
     height: 100vh;
     font-family: Libre Bodoni;
 }
@@ -239,13 +260,26 @@ article{
     background-size: cover;
 }
 
+.textCutNarcisse h2{
+    font-weight: bold;
+    font-size: 44px;
+    padding-top: 70px;
+}
+
+.textCutNarcisse .title{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 25vh;
+    margin-left: 18px;
+}
+
 .textCutNarcisse{
     height: 100vh;
-    font-family: Libre Bodoni;
+    font-family: 'Trajan Pro';
 }
 
 .textCutNarcisse p{
-    font-size: 36px;
+    font-size: 32px;
     padding-top: 70px;
     padding-left: 48px;
     padding-right: 48px;
