@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 
+ 
+ 
+
 body{
     font-family: 'Poppins', sans-serif;
     background: #20022b;
     color: white;
-    overflow-y: hidden;
+   
     overflow-x: hidden;
 }
 
@@ -83,7 +86,7 @@ article{
     overflow: hidden;
 }
 #icare{
-    cursor: url('img/ico/sun.svg'), pointer;
+    cursor: url('img/ico/sun.png'), pointer;
 }
 #bgIcare img{
     position: absolute;
@@ -123,10 +126,11 @@ article{
     width: 100%;
     height: 100%;
     background-color: black; /* fallback color */
+    overflow: hidden;
 }
 
 #narcisse{
-    cursor: url('img/ico/hearth.svg'), pointer;
+    cursor: url('img/ico/like.png'), pointer;
 }
 #bgNarcisse img{
     transition: all 0.8s;
@@ -159,8 +163,24 @@ article{
     top: 2vh;
 }
 #midas{
-    cursor: url('img/ico/money.svg'), pointer;
+    cursor: url('img/ico/click.png'), pointer;
+    color: black;
+
 }
+
+ 
+
+#Midas1 h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 40% 0 0 0;
+}
+
+#Midas1 p {
+    text-align: center;
+}
+
+
 #bgMidas{
     font-family: 'Bodoni Moda', serif;
     width: 100%;
@@ -172,13 +192,19 @@ article{
     filter: contrast(100%);
     border-left: 2px solid white;
     border-right: 2px solid white;
+    overflow: hidden;
+    color: white;
 }
+
+
+
+
 
 #bgMidas img{
     position: absolute;
     top: 40vh;
     left: 2vw;
-
+    
     width: 56vh;
     height: 80vh;
 }
@@ -277,6 +303,9 @@ article{
 .textCutMidas{
     height: 100vh;
     font-family: Libre Bodoni;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .textCutMidas p{
@@ -284,7 +313,9 @@ article{
     padding-top: 70px;
     padding-left: 48px;
     padding-right: 48px;
-    text-align: left;
+   
+    text-align: center;
+    text-shadow: #ffffff 0px 2px 5px;
 }
 
 #Midas1{
@@ -299,9 +330,13 @@ article{
     background-image: url('img/Midas/3.png');
     background-size: cover;
 }
-#Midas{
+#Midas4{
     background-image: url('img/Midas/4.png');
     background-size: cover;
+}
+
+#Midas4 p, #Midas3 {
+    color: #ffffff;
 }
 
 .Leave{
@@ -328,5 +363,29 @@ article:hover #bgNarcisse {
 article:hover #bgIcare {
 
     transform:translateX(-100vh);
+
+}
+
+
+.hidden{
+    display: none!important;
+}
+
+#End{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+
+.normal{
+
+}
+
+.grand{
 
 }
