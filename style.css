@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #20022b;
+    color: white;
+    overflow-y: hidden;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+
+    background-color: #FFF5E0;
+    color: #000;
+
+    font-family: 'Bodoni Moda', serif;
+}
+
+.center{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.scrollbtn{
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+}
+
+#header div h1{
+    font-size: 48px;
+    text-align: center;
+}
+
+#header div .textIntro{
+    width: 800px;
+    text-align: justify;
+    font-size: 30px;
+}
+
+#header div .textIntro span{
+    font-weight: bold;
+}
+
+section#main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#main{
+    height: 100vh;
+}
+
+article{
+    text-align: center;
+    height: 100vh;
+}
+
+#bgIcare{
+    font-family: 'Bodoni Moda', serif;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+    filter: contrast(100%);
+    cursor: url('img/ico/sun.svg'), pointer;
+    overflow: hidden;
+}
+
+#bgIcare img{
+    position: relative;
+    top: -165px;
+    right: -20px;
+}
+
+#bgIcare .character-name{
+    font-weight: 100;
+    font-size: 130px;
+    transform: rotate(-90deg);
+
+    position: relative;
+    left: -185px;
+    top: -258px;
+}
+
+#bgIcare .title-article{
+    font-family: 'Bodoni Moda', serif;
+    font-size: 36px;
+    font-style: italic;
+
+    position: relative;
+    top: -50px;
+}
+
+#bgNarcisse{
+    background-image: url(img/assets/narcisse.png);
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: url('img/ico/hearth.svg'), pointer;
+}
+
+
+#bgMidas{
+    font-family: 'Bodoni Moda', serif;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* fallback color */
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    filter: contrast(100%);
+    cursor: url('img/ico/money.svg'), pointer;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+
+}
+
+#bgMidas img{
+    position: relative;
+    top: 225px;
+    left: -20px;
+}
+
+#bgMidas .character-name{
+    font-weight: 100;
+    font-size: 130px;
+    transform: rotate(90deg);
+
+    position: relative;
+    left: 150px;
+    top: -450px;
+}
+
+#bgMidas .title-article{
+    font-size: 36px;
+    font-style: italic;
+
+    position: relative;
+    top: 45px;
+}
+
+.content{
+    overflow: scroll;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.content::-webkit-scrollbar{
+    /* A faire */
+}
+.textCut{
+    height: 100vh;
+}
