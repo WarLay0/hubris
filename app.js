@@ -2,7 +2,11 @@ $(document).ready(function(){
 
     // Disparition des images au survol des liens
     $('#icare').hover(function(){
-        $('#bgIcare').css('display', 'none');
+        $('#bgIcare').css('background', 'red')
+        setTimeout(()=>{
+            $('#bgIcare').css('display', 'none');
+        }, 2000)
+
     }, function(){
         $('#bgIcare').css('display', 'block');
     });
@@ -24,5 +28,5 @@ $(document).ready(function(){
         $('html, body').animate({
             scrollTop: $('#main').offset().top
         }, 500 );        
-    }) 
+    })
 })

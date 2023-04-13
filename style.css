@@ -80,32 +80,35 @@ article{
 }
 
 #bgIcare img{
-    position: relative;
-    top: -165px;
-    right: -20px;
+    position: absolute;
+    top: -10vh;
+    right: -2.5vw;
+    
+    width: 65vh;
+    height: 64vh;
 }
 
 #bgIcare .character-name{
     font-weight: 100;
-    font-size: 130px;
+    font-size: 15vh;
     transform: rotate(-90deg);
 
-    position: relative;
-    left: -185px;
-    top: -258px;
+    position: absolute;
+    left: -5vw;
+    top: 45vh;
 }
 
 #bgIcare .title-article{
-    font-family: 'Bodoni Moda', serif;
     font-size: 36px;
     font-style: italic;
 
-    position: relative;
-    top: -50px;
+    position: absolute;
+    left: 10vw;
+    top: 88vh;
 }
 
 #bgNarcisse{
-    background-image: url(img/assets/narcisse.png);
+    font-family: 'Bodoni Moda', serif;
     width: 100%;
     height: 100%;
     background-color: black; /* fallback color */
@@ -114,6 +117,33 @@ article{
     cursor: url('img/ico/hearth.svg'), pointer;
 }
 
+#bgNarcisse img{
+    position: absolute;
+    top: 134vh;
+    left: 75vw;
+
+    width: 57vh;
+    height: 878;
+}
+
+#bgNarcisse .character-name{
+    font-weight: 100;
+    font-size: 15vh;
+    transform: rotate(-90deg);
+
+    position: absolute;
+    left: 58vw;
+    top: 148vh;
+}
+
+#bgNarcisse .title-article{
+    font-size: 36px;
+    font-style: italic;
+
+    position: absolute;
+    left: 78vw;
+    top: 111vh;
+}
 
 #bgMidas{
     font-family: 'Bodoni Moda', serif;
@@ -131,27 +161,31 @@ article{
 }
 
 #bgMidas img{
-    position: relative;
-    top: 225px;
-    left: -20px;
+    position: absolute;
+    top: 40vh;
+    left: 2vw;
+
+    width: 56vh;
+    height: 80vh;
 }
 
 #bgMidas .character-name{
     font-weight: 100;
-    font-size: 130px;
+    font-size: 15vh;
     transform: rotate(90deg);
 
-    position: relative;
-    left: 150px;
-    top: -450px;
+    position: absolute;
+    left: 17vw;
+    top: 35vh;
 }
 
 #bgMidas .title-article{
     font-size: 36px;
     font-style: italic;
 
-    position: relative;
-    top: 45px;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
 }
 
 .content{
@@ -162,6 +196,7 @@ article{
 .content::-webkit-scrollbar{
     /* A faire */
 }
-.textCut{
+.textCutIcare{
     height: 100vh;
+    
 }
