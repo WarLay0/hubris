@@ -12,20 +12,46 @@ $(document).ready(function(){
     });
 
     $('#narcisse').hover(function(){
-        //animation dans le css
+        $('.narcisseName').css('left', '53vw');
+        $('.narcisseName').css('opacity', '0');
+
+        $('.narcisseImage').css('left', '100vw');
+        $('.narcisseImage').css('opacity', '0');
+
+        $('#bgNarcisse').css('opacity', '0');
+
         setTimeout(()=>{
             $('#bgNarcisse').css('display', 'none');
+            $('.content').css('opacity', '1');
         }, 1000)
     }, function(){
+
         $('#bgNarcisse').css('display', 'block');
+        $('#bgNarcisse').css('opacity', '1');
         $('#bgNarcisse').css('background-color', 'transparent');
-        $('.narcisseImage').css('left', '85vw');
+
+        $('.narcisseImage').css('left', '100vw');
+
         setTimeout(()=>{
             $('.narcisseImage').css('left', '75vw');
-            $('#bgNarcisse').css('background-color', 'black');
-        }, 300)
+            $('.narcisseImage').css('opacity', '1');
 
+            $('.narcisseName').css('left', '58vw');
+            $('.narcisseName').css('opacity', '1');
+        }, 200)
+        setTimeout(()=>{
+            $('#bgNarcisse').css('background-color', 'black');
+        }, 500)
+
+        if($('#bgNarcisse').css('display', 'none')){
+            $('#bgNarcisse').css('display', 'block');
+            setTimeout(()=>{
+                $('#bgNarcisse').css('display', 'block');
+            }, 1000)
+        }
     });
+
+    
 
     $('#midas').hover(function(){
         $('#bgMidas').css('display', 'none');

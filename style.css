@@ -76,10 +76,11 @@ article{
     background-size: cover;
     transition: all 0.5s ease-in-out;
     filter: contrast(100%);
-    cursor: url('img/ico/sun.svg'), pointer;
     overflow: hidden;
 }
-
+#icare{
+    cursor: url('img/ico/sun.svg'), pointer;
+}
 #bgIcare img{
     position: absolute;
     top: -10vh;
@@ -110,20 +111,21 @@ article{
 
 #narcisse:hover #bgNarcisse img{
     transition: 1.5s;
-    left: 85vw;
 }
 
 #bgNarcisse{
+    transition: all 0.5s;
     font-family: 'Bodoni Moda', serif;
     width: 100%;
     height: 100%;
     background-color: black; /* fallback color */
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: url('img/ico/hearth.svg'), pointer;
 }
 
+#narcisse{
+    cursor: url('img/ico/hearth.svg'), pointer;
+}
 #bgNarcisse img{
+    transition: all 0.8s;
     position: absolute;
     top: 134vh;
     left: 75vw;
@@ -132,6 +134,8 @@ article{
 }
 
 #bgNarcisse .character-name{
+    transition: all 0.5s;
+
     font-weight: 100;
     font-size: 15vh;
     transform: rotate(-90deg);
@@ -146,10 +150,12 @@ article{
     font-style: italic;
 
     position: absolute;
-    left: 78vw;
+    left: 76vw;
     top: 111vh;
 }
-
+#midas{
+    cursor: url('img/ico/money.svg'), pointer;
+}
 #bgMidas{
     font-family: 'Bodoni Moda', serif;
     width: 100%;
@@ -159,10 +165,8 @@ article{
     background-size: cover;
     filter: blur(2px);
     filter: contrast(100%);
-    cursor: url('img/ico/money.svg'), pointer;
     border-left: 2px solid white;
     border-right: 2px solid white;
-
 }
 
 #bgMidas img{
@@ -197,11 +201,100 @@ article{
     overflow: scroll;
     height: 100vh;
     overflow-x: hidden;
+
+    opacity: 1;
+    transition: all 0.2s;
 }
 .content::-webkit-scrollbar{
     /* A faire */
 }
-.textCutIcare{
+
+.textCutIcare, .textCutNarcisse, .textCutMidas{
     height: 100vh;
-    
+    font-family: Libre Bodoni;
+}
+
+.textCutIcare p{
+    font-size: 36px;
+    padding-top: 70px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: left;
+}
+
+#Icare1{
+    background-image: url('img/Icare/1.png');
+    background-size: cover;
+}
+#Icare2{
+    background-image: url('img/Icare/2.png');
+    background-size: cover;
+}
+#Icare3{
+    background-image: url('img/Icare/3.png');
+    background-size: cover;
+}
+#Icare4{
+    background-image: url('img/Icare/4.png');
+    background-size: cover;
+}
+
+.textCutNarcisse{
+    height: 100vh;
+    font-family: Libre Bodoni;
+}
+
+.textCutNarcisse p{
+    font-size: 36px;
+    padding-top: 70px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: left;
+}
+
+#Narcisse1{
+    background-image: url('img/Narcisse/1.png');
+    background-size: cover;
+}
+#Narcisse2{
+    background-image: url('img/Narcisse/2.png');
+    background-size: cover;
+}
+#Narcisse3{
+    background-image: url('img/Narcisse/3.png');
+    background-size: cover;
+}
+#Narcisse4{
+    background-image: url('img/Narcisse/4.png');
+    background-size: cover;
+}
+
+.textCutMidas{
+    height: 100vh;
+    font-family: Libre Bodoni;
+}
+
+.textCutMidas p{
+    font-size: 36px;
+    padding-top: 70px;
+    padding-left: 48px;
+    padding-right: 48px;
+    text-align: left;
+}
+
+#Midas1{
+    background-image: url('img/Midas/1.png');
+    background-size: cover;
+}
+#Midas2{
+    background-image: url('img/Midas/2.png');
+    background-size: cover;
+}
+#Midas3{
+    background-image: url('img/Midas/3.png');
+    background-size: cover;
+}
+#Midas{
+    background-image: url('img/Midas/4.png');
+    background-size: cover;
 }
