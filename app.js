@@ -5,7 +5,7 @@ $(document).ready(function(){
         $('.icareName').css('left', '-10vw');
         $('.icareName').css('opacity', '0');
 
-        $('.icareImage').css('top', '-15vh');
+        $('.icareImage').css('top', '-20vh');
         $('.icareImage').css('opacity', '0');
 
         $('.icareTitle').css('top', '93vh');
