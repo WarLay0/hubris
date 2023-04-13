@@ -9,6 +9,7 @@ body{
     background: #20022b;
     color: white;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #header{
@@ -107,6 +108,11 @@ article{
     top: 88vh;
 }
 
+#narcisse:hover #bgNarcisse img{
+    transition: 1.5s;
+    left: 85vw;
+}
+
 #bgNarcisse{
     font-family: 'Bodoni Moda', serif;
     width: 100%;
@@ -123,7 +129,6 @@ article{
     left: 75vw;
 
     width: 57vh;
-    height: 878;
 }
 
 #bgNarcisse .character-name{
