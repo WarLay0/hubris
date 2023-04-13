@@ -96,8 +96,16 @@ article{
 }
 #icare{
     cursor: url('img/ico/sun.svg'), pointer;
+    background-image: url(img/Icare/1.png);
+    background-size: cover;
 }
+
+#icare:hover #bgIcare img{
+    transition: 1.5s;
+}
+
 #bgIcare img{
+    transition: all 0.8s;
     position: absolute;
     top: -10vh;
     right: -2.5vw;
@@ -107,6 +115,8 @@ article{
 }
 
 #bgIcare .character-name{
+    transition: all 0.5s;
+
     font-weight: 100;
     font-size: 15vh;
     transform: rotate(-90deg);
@@ -117,6 +127,8 @@ article{
 }
 
 #bgIcare .title-article{
+    transition: all 0.8s;
+
     font-size: 36px;
     font-style: italic;
 
@@ -174,10 +186,19 @@ article{
 
     transition: all 0.8s;
 }
+
+
 #midas{
     cursor: url('img/ico/money.svg'), pointer;
+    background-image: url(img/Midas/1.png);
+    background-size: cover;
+}
+
+#midas:hover #bgMidas img{
+    transition: 1.5s;
 }
 #bgMidas{
+    transition: all 0.5s;
     font-family: 'Bodoni Moda', serif;
     width: 100%;
     height: 100%;
@@ -191,6 +212,7 @@ article{
 }
 
 #bgMidas img{
+    transition: all 0.8s;
     position: absolute;
     top: 40vh;
     left: 2vw;
@@ -200,6 +222,7 @@ article{
 }
 
 #bgMidas .character-name{
+    transition: all 0.5s;
     font-weight: 100;
     font-size: 15vh;
     transform: rotate(90deg);
@@ -216,6 +239,8 @@ article{
     position: absolute;
     top: 10vh;
     left: 10vw;
+
+    transition: all 0.8s;
 }
 
 .content{
