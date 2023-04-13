@@ -19,15 +19,17 @@ $(document).ready(function(){
         $('.narcisseImage').css('opacity', '0');
 
         $('.narcisseTitle').css('top', '105vh');
-
+        $('.narcisseTitle').css('opacity', '0');
 
         $('#bgNarcisse').css('opacity', '0');
 
-        setTimeout(()=>{
+        timer = setTimeout(()=>{
             $('#bgNarcisse').css('display', 'none');
             $('.content').css('opacity', '1');
         }, 1000)
     }, function(){
+        clearTimeout(timer);
+        $('.content').css('opacity', '0');
 
         $('#bgNarcisse').css('display', 'block');
         $('#bgNarcisse').css('opacity', '1');
@@ -35,10 +37,10 @@ $(document).ready(function(){
 
         $('.narcisseImage').css('left', '100vw');
 
-        $('.narcisseTitle').css('top', '111vh');
-
-
         setTimeout(()=>{
+            $('.narcisseTitle').css('top', '111vh');
+            $('.narcisseTitle').css('opacity', '1');
+
             $('.narcisseImage').css('left', '75vw');
             $('.narcisseImage').css('opacity', '1');
 
@@ -48,13 +50,6 @@ $(document).ready(function(){
         setTimeout(()=>{
             $('#bgNarcisse').css('background-color', 'black');
         }, 500)
-
-        if($('#bgNarcisse').css('display', 'none')){
-            $('#bgNarcisse').css('display', 'block');
-            setTimeout(()=>{
-                $('#bgNarcisse').css('display', 'block');
-            }, 1000)
-        }
     });
 
     
