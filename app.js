@@ -1,4 +1,4 @@
-$(document).ready(function(){
+ $(document).ready(function(){
 
     // Disparition des images au survol des liens
     $('#icare').hover(function(){
@@ -120,10 +120,90 @@ $(document).ready(function(){
         }, 500)
     });
 
-    // Scoller à un endroit précis dans la page, 100vh
-    $('#headerToMain').click(function(){
+//     // Scoller à un endroit précis dans la page, 100vh
+     $('#headerToMain').click(function(){
         $('html, body').animate({
-            scrollTop: $('#main').offset().top
-        }, 500 );        
-    })
-})
+             scrollTop: $('#main').offset().top
+         }, 500 );        
+     })
+ })
+
+
+const l1 = document.querySelector('#icareContent')
+const l2 = document.querySelector('#ContentMidas')
+const l3 = document.querySelector('#ContentNarcisse')
+const Mo = document.querySelector('#End')
+let c1 = 0
+let c2 = 0
+let c3 = 0
+const BDody = document.querySelector('body')
+const main = document.querySelector('#main')
+
+console.log(l1.scrollHeight)
+
+ 
+
+l1.addEventListener('scroll', (event) => {
+ 
+        console.log(l1.scrollTop, "distance du top");
+         if (l1.scrollHeight- l1.scrollTop- l1.clientHeight< 1 ){
+            c1++
+            console.log("End", c1);
+            if(c1 && c2 && c3 > 0){
+                console.log("les trois sont valide")
+                Mo.classList.remove('hidden')
+
+            }
+
+        }
+
+});
+
+l2.addEventListener('scroll', (event) => {
+ 
+ 
+    if (l2.scrollHeight- l2.scrollTop- l2.clientHeight< 1){
+        c2++
+        console.log("End", c2);
+        if(c1 && c2 && c3 > 0){
+            console.log("les trois son valide")
+            Mo.classList.remove('hidden')
+
+        }
+
+   }
+
+}); 
+
+
+
+function moraleFunction(){
+    main.animate({
+       scrollTop: 600
+     }, 500 );
+ }
+
+
+l3.addEventListener('scroll', (event) => {
+ 
+ 
+    if (l3.scrollHeight- l3.scrollTop- l3.clientHeight< 1){
+        c3++
+        console.log("End", c3);
+        if(c1 && c2 && c3 > 0){
+            console.log("les trois sont valide")
+            Mo.classList.remove('hidden')
+
+
+        }
+
+   }
+
+});
+
+
+
+
+console.log(BDody.scrollHeight-BDody.offsetHeight, " taille totale de scroll - taille de l'écran (banderolle - écran)");
+console.log(BDody.offsetHeight, "  offsetheight");
+console.log(BDody.scrollHeight, "  scrollheight");
