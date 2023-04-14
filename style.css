@@ -1,17 +1,39 @@
-@font-face {
-    font-family: 'Trajan Pro';
-    src: url('font/TrajanPro-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
+/* Importer toutes les font du dossier /font */
 @font-face {
     font-family: 'Changa';
-    src: url('font/Changa-Regular.ttf') format('truetype');
+    src: url('font/Changa/Changa-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Light.ttf');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Medium.ttf');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Regular.ttf');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-SemiBold.ttf');
+    font-weight: semi-bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Thin.ttf');
+    font-weight: thin;
+    font-style: normal;
 }
 
 *{
@@ -96,6 +118,9 @@ article{
 }
 #icare{
     cursor: url('img/ico/sun.svg'), pointer;
+}
+#icare h2{
+    font-family: 'Changa', sans-serif;
 }
 #bgIcare img{
     position: absolute;
@@ -234,29 +259,48 @@ article{
 .textCutIcare, .textCutNarcisse, .textCutMidas{
     height: 100vh;
     font-family: Libre Bodoni;
-}
-
-.textCutIcare p{
-    font-size: 26px;
     padding-top: 70px;
     padding-left: 48px;
     padding-right: 48px;
     text-align: left;
 }
 
+.textCutIcare p{
+    font-family: 'Changa', sans-serif;
+}
+
 #Icare1 h2{
     font-size: 48px;
-    font-style: bolditalic;
+    text-align: center;
 }
 #Icare1{
     background-image: url('img/Icare/1.png');
     background-size: cover;
 }
+#Icare1 p{
+    position: relative;
+    top: 30%;
+    font-size: 64px;
+    font-weight: bold;
+}
 #Icare2{
     background-image: url('img/Icare/2.png');
     background-size: cover;
 }
-m
+#Icare2 p{
+    margin: 1.5em;   
+    line-height: 45px;
+    font-size: 36px;
+}#Icare3 p{
+    margin: 1.5em;   
+    line-height: 45px;
+    font-size: 36px;
+}#Icare4 p{
+    margin: 1.5em;   
+    line-height: 45px;
+    font-size: 36px;
+}
+
 #Icare3{
     background-image: url('img/Icare/3.png');
     background-size: cover;
