@@ -137,10 +137,6 @@ article{
     background-image: url(img/Icare/1.png);
     background-size: cover;
 }
-
-#icare h2{
-    font-family: 'Changa', sans-serif;
-
 #icare:hover #bgIcare img{
     transition: 1.5s;
 }
@@ -236,10 +232,19 @@ article{
     cursor: url('img/ico/money.svg'), pointer;
     background-image: url(img/Midas/1.png);
     background-size: cover;
+    color: black;
 }
 
 #midas:hover #bgMidas img{
     transition: 1.5s;
+}
+#Midas1 h2 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 40% 0 0 0;
+}
+#Midas1 p {
+    text-align: center;
 }
 #bgMidas{
     transition: all 0.5s;
@@ -253,6 +258,7 @@ article{
     filter: contrast(100%);
     border-left: 2px solid white;
     border-right: 2px solid white;
+    color: white;
 }
 
 #bgMidas img{
@@ -322,6 +328,9 @@ article{
 }
 
 .textCutIcare p{
+    font-family: 'Changa', sans-serif;
+}
+.textCutIcare .title{
     font-family: 'Changa', sans-serif;
 }
 
@@ -418,14 +427,18 @@ article{
 .textCutMidas{
     height: 100vh;
     font-family: Libre Bodoni;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .textCutMidas p{
-    font-size: 36px;
+    font-size: 32px;
     padding-top: 70px;
     padding-left: 48px;
     padding-right: 48px;
-    text-align: left;
+   
+    text-shadow: #ffffff 0px 2px 5px;
 }
 
 #Midas1{
@@ -445,3 +458,6 @@ article{
     background-size: cover;
 }
 
+#Midas3 {
+    color: #ffffff;
+}
