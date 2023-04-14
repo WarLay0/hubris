@@ -1,3 +1,57 @@
+/* Importer toutes les font du dossier /font */
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Light.ttf');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Medium.ttf');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-SemiBold.ttf');
+    font-weight: semi-bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Changa';
+    src: url('font/Changa/Changa-Thin.ttf');
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TrajanPro', serif;
+    src: url('fonts/TrajanPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Bodoni';
+    src: url('fonts/BodoniModa-VariableFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -87,8 +141,18 @@ article{
 }
 #icare{
     cursor: url('img/ico/sun.png'), pointer;
+
+    background-image: url(img/Icare/1.png);
+    background-size: cover;
 }
+
+
+#icare:hover #bgIcare img{
+    transition: 1.5s;
+}
+
 #bgIcare img{
+    transition: all 0.8s;
     position: absolute;
     top: -10vh;
     right: -2.5vw;
@@ -98,6 +162,8 @@ article{
 }
 
 #bgIcare .character-name{
+    transition: all 0.5s;
+
     font-weight: 100;
     font-size: 15vh;
     transform: rotate(-90deg);
@@ -108,6 +174,8 @@ article{
 }
 
 #bgIcare .title-article{
+    transition: all 0.8s;
+
     font-size: 36px;
     font-style: italic;
 
@@ -131,7 +199,10 @@ article{
 
 #narcisse{
     cursor: url('img/ico/like.png'), pointer;
+    background-image: url(img/Narcisse/1.png);
+    background-size: cover;
 }
+
 #bgNarcisse img{
     transition: all 0.8s;
     position: absolute;
@@ -158,14 +229,27 @@ article{
     font-style: italic;
 
     position: absolute;
-    left: 9vw;
-  
-    top: 2vh;
+    left: 76vw;
+    top: 111vh;
+
+    transition: all 0.8s;
 }
+
+#ContentNarcisse{
+    font-family: 'Trajan Pro';
+}
+
 #midas{
     cursor: url('img/ico/click.png'), pointer;
     color: black;
 
+
+    background-image: url(img/Midas/1.png);
+    background-size: cover;
+}
+
+#midas:hover #bgMidas img{
+    transition: 1.5s;
 }
 
  
@@ -182,6 +266,7 @@ article{
 
 
 #bgMidas{
+    transition: all 0.5s;
     font-family: 'Bodoni Moda', serif;
     width: 100%;
     height: 100%;
@@ -201,6 +286,7 @@ article{
 
 
 #bgMidas img{
+    transition: all 0.8s;
     position: absolute;
     top: 40vh;
     left: 2vw;
@@ -210,6 +296,7 @@ article{
 }
 
 #bgMidas .character-name{
+    transition: all 0.5s;
     font-weight: 100;
     font-size: 15vh;
     transform: rotate(90deg);
@@ -226,41 +313,80 @@ article{
     position: absolute;
     top: 10vh;
     left: 10vw;
+
+    transition: all 0.8s;
 }
 
 .content{
-    overflow: scroll;
     height: 100vh;
     overflow-x: hidden;
 
-    opacity: 1;
-    transition: all 0.2s;
+    opacity: 0;
+    transition: all 0.5s;
+
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
 }
+
+.content div{
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.scrollframe {
+    scroll-snap-align: start;
+}
+
 .content::-webkit-scrollbar{
     /* A faire */
 }
 
-.textCutIcare, .textCutNarcisse, .textCutMidas{
+.textCutIcare, .textCutMidas{
     height: 100vh;
     font-family: Libre Bodoni;
-}
-
-.textCutIcare p{
-    font-size: 36px;
     padding-top: 70px;
     padding-left: 48px;
     padding-right: 48px;
     text-align: left;
 }
 
+.textCutIcare p{
+    font-family: 'Changa', sans-serif;
+}
+
+#Icare1 h2{
+    font-size: 48px;
+    text-align: center;
+}
 #Icare1{
     background-image: url('img/Icare/1.png');
     background-size: cover;
+}
+#Icare1 p{
+    position: relative;
+    top: 30%;
+    font-size: 64px;
+    font-weight: bold;
 }
 #Icare2{
     background-image: url('img/Icare/2.png');
     background-size: cover;
 }
+#Icare2 p{
+    margin: 1.5em;   
+    line-height: 45px;
+    font-size: 36px;
+}#Icare3 p{
+    margin: 1.5em;   
+    line-height: 45px;
+    font-size: 36px;
+}#Icare4 p{
+    margin: 1.5em;   
+    line-height: 45px;
+    font-size: 36px;
+}
+
 #Icare3{
     background-image: url('img/Icare/3.png');
     background-size: cover;
@@ -270,23 +396,45 @@ article{
     background-size: cover;
 }
 
+.textCutNarcisse h2{
+    font-weight: bold;
+    font-size: 44px;
+    padding-top: 70px;
+}
+
+.textCutNarcisse .title{
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 25vh;
+    margin-left: 18px;
+}
+.textCutIcare .title{
+    font-family: 'Changa', sans-serif;
+}
+
 .textCutNarcisse{
     height: 100vh;
-    font-family: Libre Bodoni;
+    font-family: 'Trajan Pro';
 }
 
 .textCutNarcisse p{
-    font-size: 36px;
+    font-size: 32px;
     padding-top: 70px;
     padding-left: 48px;
     padding-right: 48px;
     text-align: left;
 }
 
+#Narcisse1 h2{
+    font-size: 48px;
+
+}
 #Narcisse1{
     background-image: url('img/Narcisse/1.png');
     background-size: cover;
 }
+
+
 #Narcisse2{
     background-image: url('img/Narcisse/2.png');
     background-size: cover;
@@ -348,7 +496,7 @@ article{
 
 
 
-article:hover #bgMidas {
+/*article:hover #bgMidas {
 
     transform:translateY(-100vh);
 
@@ -364,7 +512,7 @@ article:hover #bgIcare {
 
     transform:translateX(-100vh);
 
-}
+}*/
 
 
 .hidden{
