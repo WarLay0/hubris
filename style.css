@@ -138,6 +138,7 @@ article{
     background-size: cover;
 }
 
+
 #icare:hover #bgIcare img{
     transition: 1.5s;
 }
@@ -374,6 +375,9 @@ article{
     font-weight: bold;
     padding-top: 25vh;
     margin-left: 18px;
+}
+.textCutIcare .title{
+    font-family: 'Changa', sans-serif;
 }
 
 .textCutNarcisse{
