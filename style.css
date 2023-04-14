@@ -314,8 +314,18 @@ article{
     scroll-snap-align: start;
 }
 
-.content::-webkit-scrollbar{
-    /* A faire */
+/* Modifier les barre de scoll des div .content */
+.content::-webkit-scrollbar {
+    width: 4px;
+    background-color: white;
+}
+.content::-webkit-scrollbar-thumb {
+    background: #000;
+    border-radius: 10px;
+}
+.content::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
 }
 
 .textCutIcare, .textCutMidas{
