@@ -453,11 +453,11 @@ article{
     background-image: url('img/Midas/3.png');
     background-size: cover;
 }
-#Midas{
+#Midas4{
     background-image: url('img/Midas/4.png');
     background-size: cover;
 }
 
-#Midas3 {
+#Midas3, #Midas4 {
     color: #ffffff;
 }
