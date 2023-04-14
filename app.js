@@ -124,6 +124,12 @@ $(document).ready(function(){
     $('#headerToMain').click(function(){
         $('html, body').animate({
             scrollTop: $('#main').offset().top
-        }, 500 );        
+        }, 500 );
     })
+    $('#toEnd').click(function(){
+        $('html, body').animate({
+            scrollTop: $('#end').offset().top
+        }, 500 );
+    })
+    
 })

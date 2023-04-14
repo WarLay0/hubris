@@ -1,23 +1,43 @@
-// $(document).ready(function(){
-//     var enfants = $('.textCutIcare')
-//     var heightArray = []
-//     var etat = 0
-//     for (let i = 1; i < enfants.length; i++) {
-//         // Ajouter dans heightArray la valeur de scroll des enfants
-//         heightArray.push(enfants[i].scrollHeight*i)
-//         console.log(heightArray)
-//     }
-//     $('#icareContent').scroll(function(){
-//         var scroll = $('#icareContent').scrollTop()
-//         console.log(scroll)
-
-//         if(scroll > heightArray[0]/3 && scroll < heightArray[0]/3*2){
-//             etat = 0
-//             console.log('Scroll vers le deuxième enfant')
-//             $('#icareContent').animate({
-//                 scrollTop: heightArray[etat]
-//             }, 1000)
-//         }
-//     })
-
-// })
+$(document).ready(function(){
+    $('#FooterPanel').css('display', 'none');
+    var icareEtat = 0;
+    var midasEtat = 0;
+    var narcisseEtat = 0;
+    var nbDiv = $('.textCutIcare').length;
+    var vh = $('.textCutIcare').height();
+    var total = nbDiv * vh;
+    function condition(){
+        if(icareEtat == 1 && midasEtat == 1 && narcisseEtat == 1){
+            $('#FooterPanel').css('display', 'block');
+        }else{
+            $('#FooterPanel').css('display', 'none');
+        }
+    }
+    $('#icareContent').scroll(function(){
+        var scroll = $('#icareContent').scrollTop();
+        // console.log(icareEtat);
+        // console.log(scroll + ' ' + total);
+        if(scroll > total-vh){
+            icareEtat = 1;
+        }
+        condition();
+    })
+    $('#ContentMidas').scroll(function(){
+        var scroll = $('#ContentMidas').scrollTop();
+        // console.log(icareEtat);
+        // console.log(scroll + ' ' + total);
+        if(scroll > total-vh){
+            midasEtat = 1;
+        }
+        condition();
+    })
+    $('#ContentNarcisse').scroll(function(){
+        var scroll = $('#ContentNarcisse').scrollTop();
+        // console.log(icareEtat);
+        // console.log(scroll + ' ' + total);
+        if(scroll > total-vh){
+            narcisseEtat = 1;
+        }
+        condition();
+    })
+})

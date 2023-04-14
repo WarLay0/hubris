@@ -69,6 +69,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
 
     background-color: #FFF5E0;
     color: #000;
@@ -79,6 +80,7 @@ body{
 .center{
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -114,11 +116,13 @@ section#main{
 
 #main{
     height: 100vh;
+    max-height: 100vh;
 }
 
 article{
     text-align: center;
     height: 100vh;
+    max-height: 100vh;
 }
 
 #bgIcare{
@@ -295,6 +299,7 @@ article{
 
 .content{
     height: 100vh;
+    max-height: 100vh;
     overflow-x: hidden;
 
     opacity: 0;
@@ -307,6 +312,7 @@ article{
 .content div{
     width: 100%;
     height: 100vh;
+    max-height: 100vh;
     scroll-snap-align: start;
 }
 
@@ -330,6 +336,7 @@ article{
 
 .textCutIcare, .textCutMidas{
     height: 100vh;
+    max-height: 100vh;
     font-family: Libre Bodoni;
     padding-top: 70px;
     padding-left: 48px;
@@ -400,6 +407,7 @@ article{
 
 .textCutNarcisse{
     height: 100vh;
+    max-height: 100vh;
     font-family: 'Trajan Pro';
 }
 
@@ -436,6 +444,7 @@ article{
 
 .textCutMidas{
     height: 100vh;
+    max-height: 100vh;
     font-family: Libre Bodoni;
     display: flex;
     flex-direction: column;
@@ -470,4 +479,16 @@ article{
 
 #Midas3, #Midas4 {
     color: #ffffff;
+}
+
+#FooterPanel{
+    background-color: purple;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+#end{
+    height: 100vh;
+    background-color: red;
+    z-index: 100;
 }
