@@ -487,8 +487,18 @@ article{
     position: fixed;
     bottom: 0;
 }
+
 #end{
-    height: 100vh;
-    background-color: red;
-    z-index: 100;
+    position: absolute;
+    top: 150vh;
+    width: 500px;
+    height: 250px;
+    background-color: #FFF5E0;
+    color: black;
+}
+.disable{
+    left: -100vw;
+}
+.enable{
+    left: 0;
 }

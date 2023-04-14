@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('#FooterPanel').css('display', 'none');
+    $('#end').removeClass('disable');
     var icareEtat = 0;
     var midasEtat = 0;
     var narcisseEtat = 0;
@@ -8,9 +9,12 @@ $(document).ready(function(){
     var total = nbDiv * vh;
     function condition(){
         if(icareEtat == 1 && midasEtat == 1 && narcisseEtat == 1){
-            $('#FooterPanel').css('display', 'block');
+            $('#end').removeClass('disable');
+            $('#end').addclass('enable');
+
         }else{
-            $('#FooterPanel').css('display', 'none');
+            $('#end').removeClass('enable');
+            $('#end').addclass('disable');
         }
     }
     $('#icareContent').scroll(function(){
