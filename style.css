@@ -133,7 +133,7 @@ article{
     overflow: hidden;
 }
 #icare{
-    cursor: url('img/ico/sun.svg'), pointer;
+    cursor: url('img/ico/sun.png'), pointer;
     background-image: url(img/Icare/1.png);
     background-size: cover;
 }
@@ -187,7 +187,7 @@ article{
 }
 
 #narcisse{
-    cursor: url('img/ico/hearth.svg'), pointer;
+    cursor: url('img/ico/mirror.png'), pointer;
     background-image: url(img/Narcisse/1.png);
     background-size: cover;
 }
@@ -229,7 +229,7 @@ article{
 }
 
 #midas{
-    cursor: url('img/ico/money.svg'), pointer;
+    cursor: url('img/ico/gold1.png'), pointer;
     background-image: url(img/Midas/1.png);
     background-size: cover;
     color: black;
