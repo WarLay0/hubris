@@ -1,6 +1,5 @@
 $(document).ready(function(){
     $('#FooterPanel').css('display', 'none');
-    $('#end').removeClass('disable');
     var icareEtat = 0;
     var midasEtat = 0;
     var narcisseEtat = 0;
@@ -10,11 +9,11 @@ $(document).ready(function(){
     function condition(){
         if(icareEtat == 1 && midasEtat == 1 && narcisseEtat == 1){
             $('#end').removeClass('disable');
-            $('#end').addclass('enable');
+            $('#end').addClass('enable');
 
         }else{
             $('#end').removeClass('enable');
-            $('#end').addclass('disable');
+            $('#end').addClass('disable');
         }
     }
     $('#icareContent').scroll(function(){

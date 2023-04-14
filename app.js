@@ -1,5 +1,9 @@
 $(document).ready(function(){
-
+    $('#close').click(function(){
+        $('#end').removeClass('enable');
+        $('#end').addClass('disable');
+        location.reload();
+    })
     // Disparition des images au survol des liens
     $('#icare').hover(function(){
         $('.icareName').css('left', '-10vw');

@@ -490,15 +490,21 @@ article{
 
 #end{
     position: absolute;
-    top: 150vh;
-    width: 500px;
+    top: 140vh;
+    width: 65vw;
     height: 250px;
     background-color: #FFF5E0;
     color: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Libre Bodoni', sans-serif;
+    flex-direction: column;
+    font-size: 24px;
+    padding: 35px;
 }
 .disable{
     left: -100vw;
 }
 .enable{
-    left: 0;
+    left: 18vw;
 }
